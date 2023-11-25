@@ -1,0 +1,6 @@
+.header {
+  height: 7vh;
+  z-index: 10;
+  background-color: var(--primary-color);
+  color: #00bfa5;
+}

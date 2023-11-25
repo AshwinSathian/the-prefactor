@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap");
+
+.primaryColorText {
+  color: var(--primary-color);
+}
+
+.heroSection {
+  width: 100vw;
+  height: 73vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.creativeText {
+  font-family: "Euphoria Script", cursive;
+  margin: 0 1rem;
+}
+
+.heroHeadline {
+  color: #00bfa5;
+  font-weight: 500;
+}

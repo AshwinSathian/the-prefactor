@@ -1,0 +1,11 @@
+.primaryColorText {
+  color: var(--primary-color);
+}
+
+.offeringDetail {
+  background-color: var(--primary-color);
+  color: #00bfa5;
+  padding: 2rem;
+  margin: 1rem;
+  width: 100%;
+}

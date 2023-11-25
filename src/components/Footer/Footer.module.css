@@ -1,0 +1,17 @@
+.megaFooter {
+  width: 100%;
+  min-height: 10vh;
+  background: var(--primary-color);
+  color: #00bfa5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+}
+
+.contactUs {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
