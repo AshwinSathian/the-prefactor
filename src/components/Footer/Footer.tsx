@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     {
       id: 1,
       icon: "pi-instagram",
-      link: "https://www.linkedin.com/company/the-pro-factor/",
+      link: "https://www.instagram.com/theprofactor/",
     },
     {
       id: 2,
