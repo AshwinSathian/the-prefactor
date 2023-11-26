@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     {
       id: 2,
       icon: "pi-linkedin",
-      link: "https://www.instagram.com/theprofactor/",
+      link: "https://www.linkedin.com/company/the-pro-factor/",
     },
   ];
   return (
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
       </p>
       <div className="w-full flex items-center justify-center gap-3">
         {socials.map((s) => (
-          <a key={s.id} href={s.link}>
+          <a key={s.id} href={s.link} target="_blank">
             <Button
               icon={`pi ${s.icon}`}
               rounded

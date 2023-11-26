@@ -4,6 +4,22 @@ import { Card } from "primereact/card";
 import styles from "./Contact.module.css";
 
 const Contact: React.FC = () => {
+  const contactItems = [
+    {
+      id: 1,
+      name: "Email",
+      icon: "pi-envelope",
+      link: "mailto:connect.theprofactor@gmail.com",
+      value: "connect.theprofactor@gmail.com",
+    },
+    {
+      id: 2,
+      name: "Phone",
+      icon: "pi-phone",
+      link: "tel:+919433115533",
+      value: "+91 9433115533",
+    },
+  ];
   return (
     <div
       id="contact"
@@ -15,38 +31,23 @@ const Contact: React.FC = () => {
         Get in Touch
       </h1>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div>
-          <Card className="w-full">
-            <div
-              className={`${styles.primaryColorText} flex flex-col items-center gap-3`}
-            >
-              <i className="pi pi-envelope" style={{ fontSize: "3rem" }}></i>
-              <div className="flex flex-col text-center">
-                <div className="font-semibold">Email</div>
-                <a href="mailto:connect.theprofactor@gmail.com">
-                  <div className="font-normal">
-                    connect.theprofactor@gmail.com
-                  </div>
-                </a>
+        {contactItems.map((c) => (
+          <div key={c.id}>
+            <Card className="w-full">
+              <div
+                className={`${styles.primaryColorText} flex flex-col items-center gap-3`}
+              >
+                <i className={`pi ${c.icon}`} style={{ fontSize: "3rem" }}></i>
+                <div className="flex flex-col text-center">
+                  <div className="font-semibold">{c.name}</div>
+                  <a href={c.link} target="_blank">
+                    <div className="font-normal">{c.value}</div>
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
-        </div>
-        <div>
-          <Card className="w-full">
-            <div
-              className={`${styles.primaryColorText} flex flex-col items-center gap-3`}
-            >
-              <i className="pi pi-phone" style={{ fontSize: "3rem" }}></i>
-              <div className="flex flex-col text-center">
-                <div className="font-semibold">Email</div>
-                <a href="">
-                  <div className="font-normal">+91 99123 43212</div>
-                </a>
-              </div>
-            </div>
-          </Card>
-        </div>
+            </Card>
+          </div>
+        ))}
       </div>
     </div>
   );
