@@ -37,7 +37,7 @@ const Offerings: React.FC = () => {
   const offeringItems = [
     {
       id: 1,
-      title: "INSTITUTIONS/ORGANIZATIONS",
+      title: "INSTITUTIONS AND ORGANIZATIONS",
       description:
         "TG: Schools/ Colleges / Offices • Includes 3 courses for 3 different levels of proficiency based on personality, 1Q & EQ test • Includes short term services like brand value training, POSH, Employee engagement sessions etc",
       image: "./assets/offering-1.png",
@@ -99,22 +99,26 @@ const Offerings: React.FC = () => {
         What We Offer
       </h1>
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
-        {offeringItems.map((o, index) => {
-          const header = (
-            <img alt={o.title} src={o.image} className="w-full rounded-full" />
-          );
+        {offeringItems.map((o) => {
           return (
             <div key={o.id} className="p-8 text-center">
-              <Card
-                title={o.title}
-                className={`${styles.primaryColorText}`}
-                header={header}
-              >
-                <Button
-                  label="Learn More"
-                  className="w-full"
-                  onClick={() => learnMore(o.id)}
-                />
+              <Card>
+                <div
+                  className={`${styles.primaryColorText} flex flex-col gap-5 w-full p-5`}
+                >
+                  <img
+                    src={o.image}
+                    className="w-2/3 h-auto rounded-full m-4 mx-auto"
+                  />
+                  <h1 className="text-2xl font-semibold text-center">
+                    {o.title}
+                  </h1>
+                  <Button
+                    label="Learn More"
+                    className="w-full"
+                    onClick={() => learnMore(o.id)}
+                  />
+                </div>
               </Card>
             </div>
           );

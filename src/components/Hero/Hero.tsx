@@ -28,11 +28,13 @@ const HeroSection: React.FC = () => {
             severity="secondary"
             size="large"
             className="hidden lg:flex w-52"
+            rounded
           />
           <Button
             label="Explore"
             severity="secondary"
             className="lg:hidden w-52"
+            rounded
           />
         </a>
       </div>
