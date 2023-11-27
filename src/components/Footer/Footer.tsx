@@ -20,7 +20,11 @@ const Footer: React.FC = () => {
     <footer id="footer" className={styles.megaFooter}>
       <div className="w-full h-full flex flex-col justify-center">
         <div className="flex flex-col justify-center text-center">
-          <h1 className="text-5xl font-semibold">The ProFactor</h1>
+          <img
+            src="/assets/logo-2.png"
+            className="hidden lg:flex w-1/4 mx-auto"
+          />
+          <img src="/assets/logo-2.png" className="lg:hidden mx-auto" />
         </div>
       </div>
       <p className="m-3 text-sm text-center font-light">

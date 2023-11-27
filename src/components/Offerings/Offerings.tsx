@@ -25,12 +25,9 @@ const Offerings: React.FC = () => {
         className="p-button-text"
         severity="danger"
       />
-      <Button
-        label="Download Brochure"
-        icon="pi pi-download"
-        //   onClick={() => setVisible(false)}
-        autoFocus
-      />
+      <a href="/assets/New_Brochure_TPF.pdf" download="New_Brochure_TPF.pdf">
+        <Button label="Download Brochure" icon="pi pi-download" autoFocus />
+      </a>
     </div>
   );
 
@@ -128,6 +125,7 @@ const Offerings: React.FC = () => {
       <Dialog
         header={offerDetail?.title}
         visible={detailVisisble}
+        dismissableMask
         className="w-screen md:w-1/2"
         footer={footerContent}
         onHide={() => setDetailVisisble(false)}

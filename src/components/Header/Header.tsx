@@ -29,7 +29,8 @@ const Header: React.FC = () => {
       <header
         className={`${styles.header} w-full flex items-center justify-between p-2 px-5`}
       >
-        <div className="text-2xl font-semibold">The ProFactor</div>
+        <img src="/assets/logo-1.png" className="hidden lg:flex w-1/10" />
+        <div className="lg:hidden"></div>
         <div className="hidden lg:flex items-center gap-4">
           {items.map((item) => (
             <a key={item.label} href={item.id}>
@@ -46,6 +47,7 @@ const Header: React.FC = () => {
 
       <Sidebar visible={showSidebar} position="right" onHide={toggleSidebar}>
         <div className="w-full flex flex-col gap-3">
+          <img src="/assets/logo-1.png" className="w-9/10 mx-auto lg:hidden" />
           {items.map((item) => (
             <a key={item.label} href={item.id} onClick={toggleSidebar}>
               <Button label={item.label} severity="secondary" text />
