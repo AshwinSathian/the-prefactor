@@ -2,20 +2,40 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The PreFactor | The Creative Coaching Company",
+  title:
+    "The PreFactor | Your Creative Coaching Partner - Premier Corporate Training and Professional Development Solutions",
   description:
-    "Unleashing Innovation for Tomorrow's Challenges. Explore a range of training programs designed to empower your workforce with the skills needed to thrive in a competitive business landscape. Elevate Your Team's Potential with Corporate Training partnered with experts",
+    "Elevate your team’s potential with The ProFactor’s corporate training programs. Explore our professional development, leadership training, and personalized coaching services designed for business excellence",
   openGraph: {
-    title: "The PreFactor | The Creative Coaching Company",
+    title:
+      "The PreFactor | Your Creative Coaching Partner - Premier Corporate Training and Professional Development Solutions",
     description:
-      "Unleashing Innovation for Tomorrow's Challenges. Explore a range of training programs designed to empower your workforce with the skills needed to thrive in a competitive business landscape. Elevate Your Team's Potential with Corporate Training partnered with experts",
+      "Elevate your team’s potential with The ProFactor’s corporate training programs. Explore our professional development, leadership training, and personalized coaching services designed for business excellence",
   },
   twitter: {
-    title: "The PreFactor | The Creative Coaching Company",
+    title:
+      "The PreFactor | Your Creative Coaching Partner - Premier Corporate Training and Professional Development Solutions",
     description:
-      "Unleashing Innovation for Tomorrow's Challenges. Explore a range of training programs designed to empower your workforce with the skills needed to thrive in a competitive business landscape. Elevate Your Team's Potential with Corporate Training partnered with experts",
+      "Elevate your team’s potential with The ProFactor’s corporate training programs. Explore our professional development, leadership training, and personalized coaching services designed for business excellence",
   },
   icons: ["/public/favicon.png", "/public/favicon.ico"],
+  keywords: [
+    "Corporate Training",
+    "Professional Development Programs",
+    "B2B Training Solutions",
+    "Leadership Skills Training",
+    "Career Development Programs",
+    "Personal Coaching Services",
+    "Organizational Training",
+    "Business Coaching Solutions",
+    "Employee Skill Enhancement",
+    "Executive Coaching Services",
+    "Customized Training Programs",
+    "Corporate Learning Workshops",
+    "Team Building Training",
+    "Management Development Programs",
+    "Professional Coaching Services",
+  ],
 };
 
 export default function RootLayout({

@@ -31,11 +31,13 @@ const Header: React.FC = () => {
       >
         <img src="/assets/logo-1.png" className="hidden lg:flex w-60" />
         <div className="hidden lg:flex items-center gap-4">
-          {items.map((item) => (
-            <a key={item.label} href={item.id}>
-              <Button label={item.label} severity="secondary" text />
-            </a>
-          ))}
+          <nav>
+            {items.map((item) => (
+              <a key={item.label} href={item.id}>
+                <Button label={item.label} severity="secondary" text />
+              </a>
+            ))}
+          </nav>
         </div>
       </header>
       <header
@@ -50,6 +52,7 @@ const Header: React.FC = () => {
         onHide={toggleSidebar}
         style={{ minHeight: "50vh" }}
         showCloseIcon={false}
+        className="bg-primary-color"
       >
         <div className="flex flex-col gap-3 h-full text-center">
           <img src="/assets/logo-1.png" className="w-9/10 mx-auto lg:hidden" />
