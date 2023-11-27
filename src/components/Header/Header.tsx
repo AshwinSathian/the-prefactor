@@ -27,10 +27,9 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`${styles.header} w-full flex items-center justify-between p-2 px-5`}
+        className={`${styles.header} w-full hidden lg:flex items-center justify-between p-2 px-5`}
       >
-        <img src="/assets/logo-1.png" className="hidden lg:flex w-1/10" />
-        <div className="lg:hidden"></div>
+        <img src="/assets/logo-1.png" className="hidden lg:flex w-60" />
         <div className="hidden lg:flex items-center gap-4">
           {items.map((item) => (
             <a key={item.label} href={item.id}>
@@ -38,15 +37,21 @@ const Header: React.FC = () => {
             </a>
           ))}
         </div>
-        <Button
-          icon="pi pi-bars"
-          onClick={toggleSidebar}
-          className="lg:hidden text-md"
-        />
+      </header>
+      <header
+        className={`${styles.header} w-full lg:hidden flex items-center justify-center p-2 px-5 min-h-1/2`}
+      >
+        <Button icon="pi pi-bars" onClick={toggleSidebar} className="text-md" />
       </header>
 
-      <Sidebar visible={showSidebar} position="right" onHide={toggleSidebar}>
-        <div className="w-full flex flex-col gap-3">
+      <Sidebar
+        visible={showSidebar}
+        position="top"
+        onHide={toggleSidebar}
+        style={{ minHeight: "50vh" }}
+        showCloseIcon={false}
+      >
+        <div className="flex flex-col gap-3 h-full text-center">
           <img src="/assets/logo-1.png" className="w-9/10 mx-auto lg:hidden" />
           {items.map((item) => (
             <a key={item.label} href={item.id} onClick={toggleSidebar}>

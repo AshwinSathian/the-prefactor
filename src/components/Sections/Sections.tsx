@@ -18,7 +18,7 @@ const Sections: React.FC = () => {
     {
       id: 3,
       image: "./assets/2.png",
-      text: "Unleashing Innovtion for Tomorrow's Challenges",
+      text: "Unleashing Innovation for Tomorrow's Challenges",
     },
   ];
 
