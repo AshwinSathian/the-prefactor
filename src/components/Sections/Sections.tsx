@@ -31,7 +31,7 @@ const Sections: React.FC = () => {
         {items.map((i) => (
           <Card key={i.id} className="w-full">
             <div className="flex flex-col gap-5 w-full">
-              <img src={i.image} className="w-full h-auto" />
+              <img src={i.image} alt={i.text} className="w-full h-auto" />
               <h1
                 className={`${styles.sectionText} text-2xl font-semibold text-center`}
               >

@@ -35,6 +35,7 @@ const About: React.FC = () => {
             >
               <img
                 src={a.image}
+                alt={a.text}
                 className="w-2/3 md:w-1/2 h-auto rounded-full m-4 mx-auto"
               />
               <h1 className="text-2xl font-semibold text-center text-primary-color">

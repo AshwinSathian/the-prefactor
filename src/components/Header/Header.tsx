@@ -29,7 +29,11 @@ const Header: React.FC = () => {
       <header
         className={`${styles.header} w-full hidden lg:flex items-center justify-between p-2 px-5`}
       >
-        <img src="/assets/logo-1.png" className="hidden lg:flex w-60" />
+        <img
+          src="/assets/logo-1.png"
+          alt="The Pro-Factor"
+          className="hidden lg:flex w-60"
+        />
         <div className="hidden lg:flex items-center gap-4">
           <nav>
             {items.map((item) => (
@@ -55,7 +59,11 @@ const Header: React.FC = () => {
         className="bg-primary-color"
       >
         <div className="flex flex-col gap-3 h-full text-center">
-          <img src="/assets/logo-1.png" className="w-9/10 mx-auto lg:hidden" />
+          <img
+            src="/assets/logo-1.png"
+            alt="The Pro-Factor"
+            className="w-9/10 mx-auto lg:hidden"
+          />
           {items.map((item) => (
             <a key={item.label} href={item.id} onClick={toggleSidebar}>
               <Button label={item.label} severity="secondary" text />

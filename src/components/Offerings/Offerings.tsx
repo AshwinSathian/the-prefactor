@@ -105,6 +105,7 @@ const Offerings: React.FC = () => {
                 >
                   <img
                     src={o.image}
+                    alt={o.title}
                     className="w-2/3 h-auto rounded-full m-4 mx-auto"
                   />
                   <h1 className="text-2xl font-semibold text-center">

@@ -22,6 +22,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col justify-center text-center">
           <img
             src="/assets/logo-2.png"
+            alt="The Pro-Factor"
             className="hidden lg:flex w-1/4 mx-auto"
           />
           <img src="/assets/logo-2.png" className="lg:hidden mx-auto" />
