@@ -1183,7 +1183,7 @@
   font-size: 0.875rem;
   padding: 0.875rem 0.875rem;
 }
-.p-inputtext.p-inputtext-lg {
+.p-inputtext.p-inputtext-md {
   font-size: 1.25rem;
   padding: 1.25rem 1.25rem;
 }
@@ -1241,7 +1241,7 @@
   font-size: 0.875rem;
   padding: 0.875rem 0.875rem;
 }
-.p-inputtext-lg .p-inputtext {
+.p-inputtext-md .p-inputtext {
   font-size: 1.25rem;
   padding: 1.25rem 1.25rem;
 }

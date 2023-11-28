@@ -18,7 +18,7 @@ const BlogScape: React.FC = () => {
             >
               Inkspirations: Navigate Our Blogscape
             </div>
-            <div className="text-lg text-center py-6 w-3/4 lg:w-1/2 mx-auto bg-gray-900/50">
+            <div className="text-md text-center py-6 w-3/4 lg:w-1/2 mx-auto bg-gray-900/50">
               Posts coming soon!
             </div>
           </div>

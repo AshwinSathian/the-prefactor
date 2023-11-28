@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
           <h2 className="text-primary-color text-2xl text-center font-semibold">
             We love our customers!
           </h2>
-          <p className="text-primary-color text-lg text-center font-normal">
+          <p className="text-primary-color text-md text-center font-normal">
             Let's stay connected!
           </p>
 

@@ -3,3 +3,7 @@
 .titleText {
   font-family: "Fredoka", sans-serif !important;
 }
+
+.container {
+  min-height: 30vh;
+}

@@ -20,7 +20,7 @@ const About: React.FC = () => {
       id: 3,
       image: "./assets/section-new-3.jpeg",
       title: "Why Us? Because we're not boring! 🌈",
-      text: "Expect a sprinkle of creativity, a dash of fun, and a whole lot of growth. We're not your typical coaching crew; we're The Pro-Factor, and we're here to turn ordinary into extraordinary, one coaching session at a time. Ready to dial up your awesomeness? Let's do this! 🚀 ",
+      text: "Expect a sprinkle of creativity, a dash of fun, and a whole lot of growth. We're not your typical coaching crew; we're The Pro-Factor, and we're here to turn ordinary into extraordinary, one coaching session at a time.\n\nReady to dial up your awesomeness? Let's do this! 🚀 ",
     },
   ];
 
@@ -34,17 +34,78 @@ const About: React.FC = () => {
       >
         Who Are We?
       </h1>
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3 text-primary-color">
-        {items.map((i) => (
-          <div
-            key={i.id}
-            className="text-primary-color flex flex-col gap-5 w-full text-center p-5"
-          >
-            <img src={i.image} alt={i.text} className="w-full h-auto" />
-            <h1 className="text-2xl font-bold text-center">{i.title}</h1>
-            <p className="text-lg">{i.text}</p>
+      <div
+        className={`${styles.container} w-full grid grid-cols-1 md:grid-cols-2 gap-3 text-primary-color`}
+      >
+        <div className="h-full p-5 flex items-center">
+          <img
+            src="./assets/section-new-1.jpeg"
+            alt="Hey there!"
+            className="w-full h-auto"
+          />
+        </div>
+        <div className="h-full p-5 flex items-center">
+          <div className="flex flex-col gap-4">
+            <h1 className="text-2xl font-bold text-center">Hey there!</h1>
+            <p className="text-md whitespace-pre-line text-center">
+              Welcome to The Pro-Factor—your go-to creative coaching buddy! 🚀
+              We're not your average coaching gig; we're the team that spices up
+              your professional journey, whether you're a big-shot company or a
+              lone wolf carving your path.{" "}
+            </p>
           </div>
-        ))}
+        </div>
+      </div>
+      <div
+        className={`${styles.container} w-full grid grid-cols-1 md:grid-cols-2 gap-3 text-primary-color`}
+      >
+        <div className="h-full p-5 flex items-center lg:order-last">
+          <img
+            src="./assets/section-new-2.jpeg"
+            alt="Hey there!"
+            className="w-full h-auto"
+          />
+        </div>
+        <div className="h-full p-5 flex items-center lg:order-first">
+          <div className="flex flex-col gap-4">
+            <h1 className="text-2xl font-bold text-center">
+              What's our Deal? 🤔
+            </h1>
+            <p className="text-md whitespace-pre-line text-center">
+              We're in the business of making magic happen. Picture this:
+              Companies, big and small, partnering with us to sprinkle a bit of
+              that Pro-Factor charm on their teams. We're not just coaches;
+              we're the creative force that fuels your brand's success.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`${styles.container} w-full grid grid-cols-1 md:grid-cols-2 gap-3 text-primary-color`}
+      >
+        <div className="h-full p-5 flex items-center">
+          <img
+            src="./assets/section-new-3.jpeg"
+            alt="Hey there!"
+            className="w-full h-auto"
+          />
+        </div>
+        <div className="h-full p-5 flex items-center">
+          <div className="flex flex-col gap-4">
+            <h1 className="text-2xl font-bold text-center">
+              Why Us? Because we're not boring! 🌈
+            </h1>
+            <p className="text-md whitespace-pre-line text-center">
+              Expect a sprinkle of creativity, a dash of fun, and a whole lot of
+              growth. We're not your typical coaching crew; we're The
+              Pro-Factor, and we're here to turn ordinary into extraordinary,
+              one coaching session at a time.
+            </p>
+            <p className="text-md whitespace-pre-line text-center">
+              Ready to dial up your awesomeness? Let's do this! 🚀
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

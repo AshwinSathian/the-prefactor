@@ -33,7 +33,7 @@ const Offerings: React.FC = () => {
       id: 2,
       title: "Boss Mode Activated",
       description:
-        "Tailored coaching to match your needs, featuring industry-best content & top-notch coaches. Our focused approach extends beyond certification—join our vibrant learner community for ongoing support. Elevate your learning experience with us!",
+        "Tailored coaching to match your needs, featuring industry-best content & top-notch coaches. Our focused approach extends beyond certification—join our vibrant learner community for ongoing support.\n\nElevate your learning experience with us!",
       image: "./assets/offering-new-2.jpeg",
       points: [
         {
@@ -57,7 +57,7 @@ const Offerings: React.FC = () => {
       id: 3,
       title: "Coaching Wizards 101",
       description:
-        "Attention all Trainers & Coaches in making! Our certification course offers 3 proficiency levels, personalized based on your skills. Top performers get a shot at joining The Pro-Factor as a training consultant. Ready to elevate your game? 🚀",
+        "Attention all Trainers & Coaches in making! Our certification course offers 3 proficiency levels, personalized based on your skills. Top performers get a shot at joining The Pro-Factor as a training consultant.\n\nReady to elevate your game? 🚀",
       image: "./assets/offering-new-3.jpeg",
     },
   ];
@@ -94,8 +94,9 @@ const Offerings: React.FC = () => {
     {
       id: 5,
       title: "Career Counselling",
-      description:
-        "Navigate Your Career Odyssey with Us: Expert Career Counseling customized just for you! Discover clarity, unlock potential, and sail smoothly toward your professional dreams. Let's embark on this journey together! ",
+      description: `Navigate Your Career Odyssey with Us: Expert Career Counseling customized just for you! Discover clarity, unlock potential, and sail smoothly toward your professional dreams.
+        
+        Let's embark on this journey together!`,
       image: "./assets/more-offering-5.jpeg",
     },
     {
@@ -129,7 +130,9 @@ const Offerings: React.FC = () => {
                     <h1 className="text-2xl font-bold text-center">
                       {o.title}
                     </h1>
-                    <p className="text-lg">{o.description}</p>
+                    <p className="text-md whitespace-pre-line">
+                      {o.description}
+                    </p>
                   </div>
                 </div>
               );
@@ -171,7 +174,7 @@ const Offerings: React.FC = () => {
                     alt={o.title}
                     className="w-9/10 lg:w-2/3 h-auto m-4 mx-auto"
                   />
-                  <p className="text-lg">{o.description}</p>
+                  <p className="text-md whitespace-pre-line">{o.description}</p>
                 </div>
               </div>
             );
