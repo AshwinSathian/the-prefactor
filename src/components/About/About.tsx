@@ -47,7 +47,7 @@ const About: React.FC = () => {
         <div className={`${styles.container} h-full p-5 flex items-center`}>
           <div className="flex flex-col gap-4">
             <h1 className="text-2xl font-bold text-center">Hey there!</h1>
-            <p className="text-md whitespace-pre-line text-center">
+            <p className="text-md whitespace-pre-line text-center mt-4">
               Welcome to The Pro-Factor—your go-to creative coaching buddy! 🚀
               We're not your average coaching gig; we're the team that spices up
               your professional journey, whether you're a big-shot company or a
@@ -75,7 +75,7 @@ const About: React.FC = () => {
             <h1 className="text-2xl font-bold text-center">
               What's our Deal? 🤔
             </h1>
-            <p className="text-md whitespace-pre-line text-center">
+            <p className="text-md whitespace-pre-line text-center mt-4">
               We're in the business of making magic happen. Picture this:
               Companies, big and small, partnering with us to sprinkle a bit of
               that Pro-Factor charm on their teams. We're not just coaches;
@@ -99,7 +99,7 @@ const About: React.FC = () => {
             <h1 className="text-2xl font-bold text-center">
               Why Us? Because we're not boring! 🌈
             </h1>
-            <p className="text-md whitespace-pre-line text-center">
+            <p className="text-md whitespace-pre-line text-center mt-4">
               Expect a sprinkle of creativity, a dash of fun, and a whole lot of
               growth. We're not your typical coaching crew; we're The
               Pro-Factor, and we're here to turn ordinary into extraordinary,
