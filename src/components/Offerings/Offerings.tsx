@@ -138,7 +138,7 @@ const Offerings: React.FC = () => {
       <div className="w-screen my-10 py-2 flex items-center justify-center">
         <a href="/assets/New_Brochure_TPF.pdf" download="New_Brochure_TPF.pdf">
           <Button
-            label="Download out Brochure"
+            label="Download our Brochure"
             size="large"
             className="hidden lg:flex min-w-fit"
             rounded
