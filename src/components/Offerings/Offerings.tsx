@@ -2,42 +2,15 @@
 
 import { Button } from "primereact/button";
 import { Card } from "primereact/card";
-import { Dialog } from "primereact/dialog";
-import { useState } from "react";
-import styles from "./Offerings.module.css";
 
 const Offerings: React.FC = () => {
-  const [offerDetail, setOfferDetail] = useState<any>(null);
-  const [detailVisisble, setDetailVisisble] = useState(false);
-
-  const learnMore = (id: number) => {
-    const item: any = offeringItems.find((o) => o.id === id);
-    setOfferDetail(item);
-    setDetailVisisble(true);
-  };
-
-  const footerContent = (
-    <div>
-      <Button
-        label="Close"
-        icon="pi pi-times"
-        onClick={() => setDetailVisisble(false)}
-        className="p-button-text"
-        severity="danger"
-      />
-      <a href="/assets/New_Brochure_TPF.pdf" download="New_Brochure_TPF.pdf">
-        <Button label="Download Brochure" icon="pi pi-download" autoFocus />
-      </a>
-    </div>
-  );
-
   const offeringItems = [
     {
       id: 1,
-      title: "INSTITUTIONS AND ORGANIZATIONS",
+      title: "Team Up for Triumph",
       description:
-        "TG: Schools/ Colleges / Offices • Includes 3 courses for 3 different levels of proficiency based on personality, 1Q & EQ test • Includes short term services like brand value training, POSH, Employee engagement sessions etc",
-      image: "./assets/offering-1.png",
+        "Dive into our courses designed for brands, institutes, or organizations at 3 rad proficiency levels. Tailored to your needs, we conduct a thorough training needs analysis, crafting a curriculum to fit your budget and timelines. Our top-tier trainers deliver best-in-class Executive coaching as well as Outbound learning experiences.",
+      image: "./assets/offering-new-1.jpeg",
       points: [
         {
           title: "Campus to Corporate",
@@ -58,10 +31,10 @@ const Offerings: React.FC = () => {
     },
     {
       id: 2,
-      title: "BECOME A COACH",
+      title: "Boss Mode Activated",
       description:
-        "TG: Trainers/ Coaches interested to get certified • 3 proficiency levels based on individual assessments • Chance to be a part of The Pro Factor as a training consultant",
-      image: "./assets/offering-2.png",
+        "Tailored coaching to match your needs, featuring industry-best content & top-notch coaches. Our focused approach extends beyond certification—join our vibrant learner community for ongoing support. Elevate your learning experience with us!",
+      image: "./assets/offering-new-2.jpeg",
       points: [
         {
           title: "Level 1",
@@ -82,40 +55,78 @@ const Offerings: React.FC = () => {
     },
     {
       id: 3,
-      title: "PERSONAL COACHING",
+      title: "Coaching Wizards 101",
       description:
-        "Specialised Coaching depending on the learner's ask and demand • Industry competent prices and course content • Long term association and potential collaboration",
-      image: "./assets/offering-3.png",
+        "Attention all Trainers & Coaches in making! Our certification course offers 3 proficiency levels, personalized based on your skills. Top performers get a shot at joining The Pro-Factor as a training consultant. Ready to elevate your game? 🚀",
+      image: "./assets/offering-new-3.jpeg",
     },
   ];
+
+  const moreOfferings = [
+    {
+      id: 1,
+      title: "Brand's Value Training",
+      description:
+        "Elevate your onboarding experience! Our brand value training isn't just a session; it's a journey into the heart of your brand's essence.",
+      image: "./assets/more-offering-1.jpeg",
+    },
+    {
+      id: 2,
+      title: "POSH & Other Compliance",
+      description:
+        "Uplift Your Workplace with Our POSH and Beyond Training! Our POSH & other compliance training isn't your run-of-the-mill session—it's a guided journey into a workplace where rules are not just followed but adopted.",
+      image: "./assets/more-offering-2.jpeg",
+    },
+    {
+      id: 3,
+      title: "Curriculum & Content Design",
+      description:
+        "We engineer transformative learning experiences. Our services go beyond content creation; we sculpt curriculums that resonate with your organizational goals.   Let's co-create a training ecosystem that fosters a culture of continuous growth. 🌐📚 ",
+      image: "./assets/more-offering-3.jpeg",
+    },
+    {
+      id: 4,
+      title: "Life Coaching",
+      description:
+        "Embark on a path to personal growth with our seasoned life coaches and mental health experts. Let's navigate challenges, nurture resilience, and sculpt a life that truly resonates with your aspirations. Because your journey deserves nothing but the best support! 🌱💙",
+      image: "./assets/more-offering-4.jpeg",
+    },
+    {
+      id: 5,
+      title: "Career Counselling",
+      description:
+        "Navigate Your Career Odyssey with Us: Expert Career Counseling customized just for you! Discover clarity, unlock potential, and sail smoothly toward your professional dreams. Let's embark on this journey together! ",
+      image: "./assets/more-offering-5.jpeg",
+    },
+    {
+      id: 6,
+      title: "Employee Engagement",
+      description:
+        "Dive into Our Fun-Fueled Employee Engagement Activities! We're not just planners; we're architects of joy at work, where engagement isn't a task but a thrilling adventure. Let's infuse your workplace with laughter, camaraderie, & a sprinkle of fun—because work should not be just a desk! 🎉💼",
+      image: "./assets/more-offering-6.jpeg",
+    },
+  ];
+
   return (
     <div id="offerings" className="py-8">
-      <h1
-        className={`${styles.primaryColorText} text-5xl text-center font-bold`}
-      >
+      <h1 className="text-primary-color text-5xl text-center font-bold">
         What We Offer
       </h1>
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
         {offeringItems.map((o) => {
           return (
-            <div key={o.id} className="p-8 text-center">
+            <div key={o.id} className="text-center">
               <Card>
-                <div
-                  className={`${styles.primaryColorText} flex flex-col gap-5 w-full p-5`}
-                >
+                <div className="text-primary-color flex flex-col gap-5 w-full p-5">
                   <img
                     src={o.image}
                     alt={o.title}
-                    className="w-2/3 h-auto rounded-full m-4 mx-auto"
+                    className="w-9/10 md:w-2/3 h-auto rounded-full m-4 mx-auto"
                   />
                   <h1 className="text-2xl font-semibold text-center">
                     {o.title}
                   </h1>
-                  <Button
-                    label="Learn More"
-                    className="w-full"
-                    onClick={() => learnMore(o.id)}
-                  />
+                  <p className="text-lg">{o.description}</p>
                 </div>
               </Card>
             </div>
@@ -123,26 +134,69 @@ const Offerings: React.FC = () => {
         })}
       </div>
 
-      <Dialog
-        header={offerDetail?.title}
-        visible={detailVisisble}
-        dismissableMask
-        className="w-screen md:w-1/2"
-        footer={footerContent}
-        onHide={() => setDetailVisisble(false)}
-      >
-        <p className="text-lg m-3">{offerDetail?.description}</p>
-        {offerDetail?.points?.map((point: any) => (
-          <div className="w-full my-3">
-            <h1 className="text-xl font-semibold">{point.title}</h1>
-            <p className="font-normal">{point.details}</p>
-          </div>
-        )) || (
-          <p className="font-normal">
-            For more information, refer our brochure
-          </p>
-        )}
-      </Dialog>
+      <div className="w-screen bg-primary-color my-4 py-2 flex items-center justify-center">
+        <a href="/assets/New_Brochure_TPF.pdf" download="New_Brochure_TPF.pdf">
+          <Button
+            label="Download out Brochure"
+            severity="secondary"
+            size="large"
+            className="hidden lg:flex min-w-fit"
+            rounded
+          />
+          <Button
+            label="Download out Brochure"
+            severity="secondary"
+            className="lg:hidden min-w-fit"
+            rounded
+          />
+        </a>
+      </div>
+
+      <h1 className="text-primary-color text-4xl text-center font-bold mt-5">
+        There's Even More!
+      </h1>
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
+        {moreOfferings.map((o) => {
+          return (
+            <div key={o.id} className="text-center">
+              <Card>
+                <div className="text-primary-color flex flex-col gap-5 w-full p-5">
+                  <img
+                    src={o.image}
+                    alt={o.title}
+                    className="w-9/10 lg:w-2/3 h-auto m-4 mx-auto"
+                  />
+                  <h1 className="text-xl font-semibold text-center">
+                    {o.title}
+                  </h1>
+                  <p>{o.description}</p>
+                </div>
+              </Card>
+            </div>
+          );
+        })}
+
+        <div className="w-screen bg-primary-color my-4 py-2 flex items-center justify-center">
+          <a
+            href="/assets/New_Brochure_TPF.pdf"
+            download="New_Brochure_TPF.pdf"
+          >
+            <Button
+              label="Download out Brochure"
+              severity="secondary"
+              size="large"
+              className="hidden lg:flex min-w-fit"
+              rounded
+            />
+            <Button
+              label="Download out Brochure"
+              severity="secondary"
+              className="lg:hidden min-w-fit"
+              rounded
+            />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,24 +1,26 @@
 "use client";
 
 import { Card } from "primereact/card";
-import styles from "./Sections.module.css";
 
 const Sections: React.FC = () => {
   const items = [
     {
       id: 1,
-      image: "./assets/1.png",
-      text: "Elevate Your Team's Potential with Corporate Training partnered with experts",
+      image: "./assets/section-new-1.jpeg",
+      title: "Hey there!",
+      text: "Welcome to The Pro-Factor—your go-to creative coaching buddy! 🚀 We're not your average coaching gig; we're the team that spices up your professional journey, whether you're a big-shot company or a lone wolf carving your path. ",
     },
     {
       id: 2,
-      image: "./assets/3.png",
-      text: "Explore a range of training programs designed to empower your workforce with the skills needed to thrive in a competitive business landscape",
+      image: "./assets/section-new-2.jpeg",
+      title: "What's our Deal? 🤔",
+      text: "We're in the business of making magic happen. Picture this: Companies, big and small, partnering with us to sprinkle a bit of that Pro-Factor charm on their teams. We're not just coaches; we're the creative force that fuels your brand's success. ",
     },
     {
       id: 3,
-      image: "./assets/2.png",
-      text: "Unleashing Innovation for Tomorrow's Challenges",
+      image: "./assets/section-new-3.jpeg",
+      title: "Why Us? Because we're not boring! 🌈",
+      text: "Expect a sprinkle of creativity, a dash of fun, and a whole lot of growth. We're not your typical coaching crew; we're The Pro-Factor, and we're here to turn ordinary into extraordinary, one coaching session at a time. Ready to dial up your awesomeness? Let's do this! 🚀 ",
     },
   ];
 
@@ -30,13 +32,10 @@ const Sections: React.FC = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3">
         {items.map((i) => (
           <Card key={i.id} className="w-full">
-            <div className="flex flex-col gap-5 w-full">
+            <div className="text-primary-color flex flex-col gap-5 w-full text-center">
               <img src={i.image} alt={i.text} className="w-full h-auto" />
-              <h1
-                className={`${styles.sectionText} text-2xl font-semibold text-center`}
-              >
-                {i.text}
-              </h1>
+              <h1 className="text-2xl font-semibold text-center">{i.title}</h1>
+              <p className="text-xl">{i.text}</p>
             </div>
           </Card>
         ))}

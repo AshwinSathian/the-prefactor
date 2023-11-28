@@ -7,13 +7,23 @@ const Footer: React.FC = () => {
   const socials = [
     {
       id: 1,
+      icon: "pi-facebook",
+      link: "https://www.facebook.com/theprofactor",
+    },
+    {
+      id: 2,
       icon: "pi-instagram",
       link: "https://www.instagram.com/theprofactor/",
     },
     {
-      id: 2,
+      id: 3,
       icon: "pi-linkedin",
       link: "https://www.linkedin.com/company/the-pro-factor/",
+    },
+    {
+      id: 4,
+      icon: "pi-youtube",
+      link: "https://www.youtube.com/theprofactor",
     },
   ];
   return (
