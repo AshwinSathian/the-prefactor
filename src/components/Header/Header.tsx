@@ -3,7 +3,6 @@
 import { Button } from "primereact/button";
 import { Sidebar } from "primereact/sidebar";
 import React, { useState } from "react";
-import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -11,12 +10,12 @@ const Header: React.FC = () => {
 
   const items = [
     {
-      label: "What We Offer",
-      id: "#offerings",
-    },
-    {
       label: "Who Are We?",
       id: "#about",
+    },
+    {
+      label: "What We Offer",
+      id: "#offerings",
     },
     {
       label: "Contact Us",
@@ -26,28 +25,21 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header
-        className={`${styles.header} w-full hidden lg:flex items-center justify-between p-2 px-5`}
-      >
-        <img
-          src="/assets/logo-1.png"
-          alt="The Pro-Factor"
-          className="hidden lg:flex w-60"
-        />
-        <div className="hidden lg:flex items-center gap-4">
-          <nav>
+      <header className="w-full flex items-center justify-around p-2 px-5 bg-primary-color">
+        <nav className="flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-2">
             {items.map((item) => (
               <a key={item.label} href={item.id}>
                 <Button label={item.label} severity="secondary" text />
               </a>
             ))}
-          </nav>
-        </div>
-      </header>
-      <header
-        className={`${styles.header} w-full lg:hidden flex items-center justify-center p-2 px-5 min-h-1/2`}
-      >
-        <Button icon="pi pi-bars" onClick={toggleSidebar} className="text-md" />
+          </div>
+          <Button
+            icon="pi pi-bars"
+            onClick={toggleSidebar}
+            className="text-md flex lg:hidden"
+          />
+        </nav>
       </header>
 
       <Sidebar

@@ -38,9 +38,10 @@ const Footer: React.FC = () => {
           <img src="/assets/logo-2.png" className="lg:hidden mx-auto" />
         </div>
       </div>
-      <p className="m-3 text-sm text-center font-light">
-        &copy; {new Date().getFullYear()} by The ProFactor. All Rights Reserved.
-      </p>
+
+      <h3 className="text-2xl text-center text-accent-color">
+        Let's stay connected
+      </h3>
       <div className="w-full flex items-center justify-center gap-3">
         {socials.map((s) => (
           <a key={s.id} href={s.link} target="_blank">
@@ -54,6 +55,10 @@ const Footer: React.FC = () => {
           </a>
         ))}
       </div>
+
+      <p className="m-3 text-sm text-center font-light">
+        &copy; {new Date().getFullYear()} by The ProFactor. All Rights Reserved.
+      </p>
     </footer>
   );
 };

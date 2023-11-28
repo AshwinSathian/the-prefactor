@@ -6,7 +6,6 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import HeroSection from "../Hero/Hero";
 import Offerings from "../Offerings/Offerings";
-import Sections from "../Sections/Sections";
 
 import { ScrollTop } from "primereact/scrolltop";
 
@@ -16,9 +15,8 @@ const LandingPage: React.FC = () => {
       <Header />
       <main>
         <HeroSection />
-        <Sections />
-        <Offerings />
         <About />
+        <Offerings />
         <Contact />
         <ScrollTop />
       </main>

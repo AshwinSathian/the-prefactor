@@ -6,38 +6,33 @@ import { Button } from "primereact/button";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className={styles.heroSection}>
-      <div className="w-full h-full flex flex-col items-center justify-center p-10 gap-4">
+    <div
+      className={`${styles.heroSection} bg-primary-color flex flex-col justify-evenly`}
+    >
+      <img
+        src="/assets/logo-2.png"
+        alt="The Pro-Factor"
+        className="w-60 mx-auto"
+      />
+      <div className="w-full flex flex-col items-center justify-center p-10 gap-4">
         <div
-          className={`${styles.heroHeadline} hidden lg:flex p-3 text-7xl text-center`}
+          className={`${styles.heroHeadline} flex flex-col gap-1 p-3 text-7xl text-center`}
         >
-          We are a
-          <span className={`${styles.creativeText} text-7xl`}>Creative</span>
-          Coaching Company
-        </div>
-        <div
-          className={`${styles.heroHeadline} lg:hidden flex flex-col gap-1 text-center my-6`}
-        >
-          <div className="text-5xl">We are a</div>
-          <div className={`${styles.creativeText} text-7xl`}>Creative</div>
-          <div className="text-5xl">Coaching Partner</div>
+          <div>We're all</div>
+          <div>SET to...</div>
+          <div className="text-xl">Spark. Elevate. Transform!</div>
         </div>
         <a href="#sections">
           <Button
-            label="Explore"
+            label="Get Started Now"
             severity="secondary"
             size="large"
-            className="hidden lg:flex w-52"
-            rounded
-          />
-          <Button
-            label="Explore"
-            severity="secondary"
-            className="lg:hidden w-52"
-            rounded
+            className="min-w-fit uppercase"
+            outlined
           />
         </a>
       </div>
+      <h1 className="text-xl text-center">connect.theprofactor@gmail.com</h1>
     </div>
   );
 };

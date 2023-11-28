@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "primereact/button";
-import { Card } from "primereact/card";
 
 const Offerings: React.FC = () => {
   const offeringItems = [
@@ -108,30 +107,71 @@ const Offerings: React.FC = () => {
   ];
 
   return (
-    <div id="offerings" className="py-8">
-      <h1 className="text-primary-color text-5xl text-center font-bold">
-        What We Offer
-      </h1>
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
-        {offeringItems.map((o) => {
-          return (
-            <div key={o.id} className="text-center">
-              <Card>
-                <div className="text-primary-color flex flex-col gap-5 w-full p-5">
+    <section id="offerings" className="pt-4 pb-10">
+      <div className="bg-primary-color text-white py-6">
+        <div className="w-full md:w-4/5 mx-auto">
+          <h1 className="text-5xl text-center font-bold text-white bg-primary-color">
+            What We Offer
+          </h1>
+          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2 text-white bg-primary-color">
+            {offeringItems.map((o) => {
+              return (
+                <div key={o.id} className="text-center">
+                  <div className="flex flex-col gap-5 w-full p-5">
+                    <img
+                      src={o.image}
+                      alt={o.title}
+                      className="w-9/10 md:w-2/3 h-auto rounded-full m-4 mx-auto"
+                    />
+                    <h1 className="text-2xl font-semibold text-center">
+                      {o.title}
+                    </h1>
+                    <p className="text-lg">{o.description}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      <div className="w-screen my-10 py-2 flex items-center justify-center">
+        <a href="/assets/New_Brochure_TPF.pdf" download="New_Brochure_TPF.pdf">
+          <Button
+            label="Download out Brochure"
+            size="large"
+            className="hidden lg:flex min-w-fit"
+            rounded
+          />
+          <Button
+            label="Download out Brochure"
+            className="lg:hidden min-w-fit"
+            rounded
+          />
+        </a>
+      </div>
+
+      <div className="w-full md:w-4/5 mx-auto text-primary-color">
+        <h1 className="text-primary-color text-4xl text-center font-bold mt-5">
+          There's Even More!
+        </h1>
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
+          {moreOfferings.map((o) => {
+            return (
+              <div key={o.id} className="text-center">
+                <div className="text-primary-color flex flex-col gap-2 w-full p-5">
+                  <h1 className="text-xl text-center">{o.title}</h1>
                   <img
                     src={o.image}
                     alt={o.title}
-                    className="w-9/10 md:w-2/3 h-auto rounded-full m-4 mx-auto"
+                    className="w-9/10 lg:w-2/3 h-auto m-4 mx-auto"
                   />
-                  <h1 className="text-2xl font-semibold text-center">
-                    {o.title}
-                  </h1>
-                  <p className="text-lg">{o.description}</p>
+                  <p>{o.description}</p>
                 </div>
-              </Card>
-            </div>
-          );
-        })}
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       <div className="w-screen my-8 py-2 flex items-center justify-center">
@@ -149,51 +189,7 @@ const Offerings: React.FC = () => {
           />
         </a>
       </div>
-
-      <h1 className="text-primary-color text-4xl text-center font-bold mt-5">
-        There's Even More!
-      </h1>
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
-        {moreOfferings.map((o) => {
-          return (
-            <div key={o.id} className="text-center">
-              <Card>
-                <div className="text-primary-color flex flex-col gap-5 w-full p-5">
-                  <img
-                    src={o.image}
-                    alt={o.title}
-                    className="w-9/10 lg:w-2/3 h-auto m-4 mx-auto"
-                  />
-                  <h1 className="text-xl font-semibold text-center">
-                    {o.title}
-                  </h1>
-                  <p>{o.description}</p>
-                </div>
-              </Card>
-            </div>
-          );
-        })}
-
-        <div className="w-screen my-8 py-2 flex items-center justify-center">
-          <a
-            href="/assets/New_Brochure_TPF.pdf"
-            download="New_Brochure_TPF.pdf"
-          >
-            <Button
-              label="Download out Brochure"
-              size="large"
-              className="hidden lg:flex min-w-fit"
-              rounded
-            />
-            <Button
-              label="Download out Brochure"
-              className="lg:hidden min-w-fit"
-              rounded
-            />
-          </a>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 
