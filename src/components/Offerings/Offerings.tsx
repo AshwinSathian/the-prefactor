@@ -153,7 +153,7 @@ const Offerings: React.FC = () => {
 
       <div className="w-full md:w-4/5 mx-auto text-primary-color">
         <h1 className="text-primary-color text-4xl text-center font-bold mt-5">
-          There's Even More!
+          Wait! There's More...
         </h1>
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
           {moreOfferings.map((o) => {
@@ -177,7 +177,7 @@ const Offerings: React.FC = () => {
       <div className="w-screen my-8 py-2 flex items-center justify-center">
         <a href="/assets/New_Brochure_TPF.pdf" download="New_Brochure_TPF.pdf">
           <Button
-            label="Download out Brochure"
+            label="Download our Brochure"
             size="large"
             className="hidden lg:flex min-w-fit"
             rounded
