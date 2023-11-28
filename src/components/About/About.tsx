@@ -1,5 +1,7 @@
 "use client";
 
+import styles from "./About.module.css";
+
 const About: React.FC = () => {
   const items = [
     {
@@ -27,7 +29,9 @@ const About: React.FC = () => {
       id="about"
       className="py-10 min-1/2 flex flex-col items-center space-around w-full md:w-4/5 mx-auto"
     >
-      <h1 className="text-primary-color text-5xl text-center font-bold mb-5">
+      <h1
+        className={`${styles.titleText} text-primary-color text-5xl text-center font-bold mb-5`}
+      >
         Who Are We?
       </h1>
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3 text-primary-color">
@@ -37,8 +41,8 @@ const About: React.FC = () => {
             className="text-primary-color flex flex-col gap-5 w-full text-center p-5"
           >
             <img src={i.image} alt={i.text} className="w-full h-auto" />
-            <h1 className="text-2xl font-semibold text-center">{i.title}</h1>
-            <p className="text-xl">{i.text}</p>
+            <h1 className="text-2xl font-bold text-center">{i.title}</h1>
+            <p className="text-lg">{i.text}</p>
           </div>
         ))}
       </div>

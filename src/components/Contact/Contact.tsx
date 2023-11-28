@@ -1,6 +1,7 @@
 "use client";
 
 import { Card } from "primereact/card";
+import styles from "./Contact.module.css";
 
 const Contact: React.FC = () => {
   const contactItems = [
@@ -18,13 +19,6 @@ const Contact: React.FC = () => {
       link: "https://wa.me/919433115533",
       value: "+91 9433115533",
     },
-    {
-      id: 3,
-      name: "Give us a Call",
-      icon: "pi-phone",
-      link: "tel:+919433115533",
-      value: "+91 9433115533",
-    },
   ];
   return (
     <section
@@ -32,14 +26,16 @@ const Contact: React.FC = () => {
       className="py-10 flex flex-col items-center space-around w-full md:w-4/5 mx-auto"
     >
       <div className="w-full grid grid-cols-1 lg:grid-cols-2">
-        <div className="py-5">
-          <h1 className="text-primary-color text-5xl text-center font-bold">
+        <div className="py-20">
+          <h1
+            className={`${styles.titleText} text-primary-color text-5xl text-center font-bold`}
+          >
             Get in Touch
           </h1>
           <h2 className="text-primary-color text-2xl text-center font-semibold">
             We love our customers!
           </h2>
-          <p className="text-primary-color text-xl text-center font-normal">
+          <p className="text-primary-color text-lg text-center font-normal">
             Let's stay connected!
           </p>
 
@@ -66,7 +62,7 @@ const Contact: React.FC = () => {
           <img
             src="./assets/contact.jpeg"
             alt="Get In Touch with The PreFactor"
-            className="w-9/10 h-auto"
+            className="w-9/10 h-auto hidden lg:flex"
           />
         </div>
       </div>

@@ -22,11 +22,11 @@ const HeroSection: React.FC = () => {
           <div
             className={`${styles.heroHeadline} flex flex-col gap-1 p-3 text-7xl text-center`}
           >
-            <div>We're all</div>
-            <div>SET to...</div>
+            <div className={`${styles.titleText} font-semibold`}>We're all</div>
+            <div className={`${styles.titleText} font-semibold`}>SET to...</div>
             <div className="text-xl">Spark. Elevate. Transform!</div>
           </div>
-          <a href="#sections">
+          <a href="#about">
             <Button
               label="Get Started Now"
               severity="secondary"

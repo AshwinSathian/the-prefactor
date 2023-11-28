@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "primereact/button";
+import styles from "./Offerings.module.css";
 
 const Offerings: React.FC = () => {
   const offeringItems = [
@@ -110,7 +111,9 @@ const Offerings: React.FC = () => {
     <section id="offerings" className="pt-4 pb-10">
       <div className="bg-primary-color text-white py-6">
         <div className="w-full md:w-4/5 mx-auto">
-          <h1 className="text-5xl text-center font-bold text-white bg-primary-color">
+          <h1
+            className={`${styles.titleText} text-5xl text-center font-bold text-white bg-primary-color`}
+          >
             What We Offer
           </h1>
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2 text-white bg-primary-color">
@@ -123,7 +126,7 @@ const Offerings: React.FC = () => {
                       alt={o.title}
                       className="w-9/10 md:w-2/3 h-auto rounded-full m-4 mx-auto"
                     />
-                    <h1 className="text-2xl font-semibold text-center">
+                    <h1 className="text-2xl font-bold text-center">
                       {o.title}
                     </h1>
                     <p className="text-lg">{o.description}</p>
@@ -152,7 +155,9 @@ const Offerings: React.FC = () => {
       </div>
 
       <div className="w-full md:w-4/5 mx-auto text-primary-color">
-        <h1 className="text-primary-color text-4xl text-center font-bold mt-5">
+        <h1
+          className={`${styles.titleText} text-primary-color text-5xl text-center font-bold mt-5`}
+        >
           Wait! There's More...
         </h1>
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -160,13 +165,13 @@ const Offerings: React.FC = () => {
             return (
               <div key={o.id} className="text-center">
                 <div className="text-primary-color flex flex-col gap-2 w-full p-5">
-                  <h1 className="text-xl text-center">{o.title}</h1>
+                  <h1 className="text-2xl font-bold text-center">{o.title}</h1>
                   <img
                     src={o.image}
                     alt={o.title}
                     className="w-9/10 lg:w-2/3 h-auto m-4 mx-auto"
                   />
-                  <p>{o.description}</p>
+                  <p className="text-lg">{o.description}</p>
                 </div>
               </div>
             );

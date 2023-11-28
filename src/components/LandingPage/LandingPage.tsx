@@ -1,6 +1,7 @@
 "use client";
 
 import About from "../About/About";
+import BlogSpace from "../BlogSpace/BlogSpace";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -17,6 +18,7 @@ const LandingPage: React.FC = () => {
         <HeroSection />
         <About />
         <Offerings />
+        <BlogSpace />
         <Contact />
         <ScrollTop />
       </main>
