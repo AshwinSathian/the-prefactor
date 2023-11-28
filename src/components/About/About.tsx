@@ -37,14 +37,14 @@ const About: React.FC = () => {
       <div
         className={`${styles.container} w-full grid grid-cols-1 md:grid-cols-2 gap-3 text-primary-color`}
       >
-        <div className="h-full p-5 flex items-center">
+        <div className={`${styles.container} h-full p-5 flex items-center`}>
           <img
             src="./assets/section-new-1.jpeg"
             alt="Hey there!"
             className="w-full h-auto"
           />
         </div>
-        <div className="h-full p-5 flex items-center">
+        <div className={`${styles.container} h-full p-5 flex items-center`}>
           <div className="flex flex-col gap-4">
             <h1 className="text-2xl font-bold text-center">Hey there!</h1>
             <p className="text-md whitespace-pre-line text-center">
@@ -59,14 +59,18 @@ const About: React.FC = () => {
       <div
         className={`${styles.container} w-full grid grid-cols-1 md:grid-cols-2 gap-3 text-primary-color`}
       >
-        <div className="h-full p-5 flex items-center lg:order-last">
+        <div
+          className={`${styles.container} h-full p-5 flex items-center lg:order-last`}
+        >
           <img
             src="./assets/section-new-2.jpeg"
             alt="Hey there!"
             className="w-full h-auto"
           />
         </div>
-        <div className="h-full p-5 flex items-center lg:order-first">
+        <div
+          className={`${styles.container} h-full p-5 flex items-center lg:order-first`}
+        >
           <div className="flex flex-col gap-4">
             <h1 className="text-2xl font-bold text-center">
               What's our Deal? 🤔
@@ -83,14 +87,14 @@ const About: React.FC = () => {
       <div
         className={`${styles.container} w-full grid grid-cols-1 md:grid-cols-2 gap-3 text-primary-color`}
       >
-        <div className="h-full p-5 flex items-center">
+        <div className={`${styles.container} h-full p-5 flex items-center`}>
           <img
             src="./assets/section-new-3.jpeg"
             alt="Hey there!"
             className="w-full h-auto"
           />
         </div>
-        <div className="h-full p-5 flex items-center">
+        <div className={`${styles.container} h-full p-5 flex items-center`}>
           <div className="flex flex-col gap-4">
             <h1 className="text-2xl font-bold text-center">
               Why Us? Because we're not boring! 🌈
