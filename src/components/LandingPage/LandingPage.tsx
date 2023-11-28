@@ -8,6 +8,8 @@ import HeroSection from "../Hero/Hero";
 import Offerings from "../Offerings/Offerings";
 import Sections from "../Sections/Sections";
 
+import { ScrollTop } from "primereact/scrolltop";
+
 const LandingPage: React.FC = () => {
   return (
     <div>
@@ -18,6 +20,7 @@ const LandingPage: React.FC = () => {
         <Offerings />
         <About />
         <Contact />
+        <ScrollTop />
       </main>
       <Footer />
     </div>
