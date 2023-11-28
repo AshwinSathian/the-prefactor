@@ -4,11 +4,11 @@
   font-family: "Fredoka", sans-serif !important;
 }
 
-.blogSpace {
+.blogScape {
   width: 100vw;
-  height: 40vh;
-  position: relative; /* Needed to position the overlay */
-  overflow: hidden; /* To handle the video size */
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .backgroundImage {

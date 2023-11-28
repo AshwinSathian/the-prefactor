@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import styles from "./BlogSpace.module.css";
+import styles from "./BlogScape.module.css";
 
-const BlogSpace: React.FC = () => {
+const BlogScape: React.FC = () => {
   return (
-    <div className={`${styles.blogSpace} my-8`}>
-      <img src="./assets/blogspace.jpeg" className={styles.backgroundImage} />
+    <div className={`${styles.blogScape} my-8`}>
+      <img src="./assets/blogscape.jpeg" className={styles.backgroundImage} />
 
       <div className={styles.overlay}>
         <div className="w-full flex flex-col items-center justify-center p-10 gap-4">
@@ -28,4 +28,4 @@ const BlogSpace: React.FC = () => {
   );
 };
 
-export default BlogSpace;
+export default BlogScape;
