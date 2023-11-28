@@ -3,18 +3,18 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title:
-    "The PreFactor | Your Creative Coaching Partner - Premier Corporate Training and Professional Development Solutions",
+    "The Pro-Factor | Your Creative Coaching Partner - Premier Corporate Training and Professional Development Solutions",
   description:
     "Elevate your team’s potential with The ProFactor’s corporate training programs. Explore our professional development, leadership training, and personalized coaching services designed for business excellence",
   openGraph: {
     title:
-      "The PreFactor | Your Creative Coaching Partner - Premier Corporate Training and Professional Development Solutions",
+      "The Pro-Factor | Your Creative Coaching Partner - Premier Corporate Training and Professional Development Solutions",
     description:
       "Elevate your team’s potential with The ProFactor’s corporate training programs. Explore our professional development, leadership training, and personalized coaching services designed for business excellence",
   },
   twitter: {
     title:
-      "The PreFactor | Your Creative Coaching Partner - Premier Corporate Training and Professional Development Solutions",
+      "The Pro-Factor | Your Creative Coaching Partner - Premier Corporate Training and Professional Development Solutions",
     description:
       "Elevate your team’s potential with The ProFactor’s corporate training programs. Explore our professional development, leadership training, and personalized coaching services designed for business excellence",
   },

@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
         <div className="lg:order-last p-4">
           <img
             src="./assets/contact.jpeg"
-            alt="Get In Touch with The PreFactor"
+            alt="Get In Touch with The Pro-Factor"
             className="w-9/10 h-auto hidden lg:flex"
           />
         </div>
