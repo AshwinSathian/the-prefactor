@@ -144,7 +144,7 @@ const Offerings: React.FC = () => {
             rounded
           />
           <Button
-            label="Download out Brochure"
+            label="Download our Brochure"
             className="lg:hidden min-w-fit"
             rounded
           />
@@ -183,7 +183,7 @@ const Offerings: React.FC = () => {
             rounded
           />
           <Button
-            label="Download out Brochure"
+            label="Download our Brochure"
             className="lg:hidden min-w-fit"
             rounded
           />
