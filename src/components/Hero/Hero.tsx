@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
         >
           <div className="text-5xl">We are a</div>
           <div className={`${styles.creativeText} text-7xl`}>Creative</div>
-          <div className="text-5xl">Coaching Agency</div>
+          <div className="text-5xl">Coaching Partner</div>
         </div>
         <a href="#sections">
           <Button
