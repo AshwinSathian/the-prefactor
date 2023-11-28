@@ -27,7 +27,7 @@ const Sections: React.FC = () => {
   return (
     <div
       id="sections"
-      className="py-8 px-10 min-1/2 flex flex-col items-center space-around"
+      className="py-8 min-1/2 flex flex-col items-center space-around"
     >
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3">
         {items.map((i) => (

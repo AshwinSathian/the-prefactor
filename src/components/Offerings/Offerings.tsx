@@ -134,18 +134,16 @@ const Offerings: React.FC = () => {
         })}
       </div>
 
-      <div className="w-screen bg-primary-color my-4 py-2 flex items-center justify-center">
+      <div className="w-screen my-8 py-2 flex items-center justify-center">
         <a href="/assets/New_Brochure_TPF.pdf" download="New_Brochure_TPF.pdf">
           <Button
             label="Download out Brochure"
-            severity="secondary"
             size="large"
             className="hidden lg:flex min-w-fit"
             rounded
           />
           <Button
             label="Download out Brochure"
-            severity="secondary"
             className="lg:hidden min-w-fit"
             rounded
           />
@@ -176,21 +174,19 @@ const Offerings: React.FC = () => {
           );
         })}
 
-        <div className="w-screen bg-primary-color my-4 py-2 flex items-center justify-center">
+        <div className="w-screen my-8 py-2 flex items-center justify-center">
           <a
             href="/assets/New_Brochure_TPF.pdf"
             download="New_Brochure_TPF.pdf"
           >
             <Button
               label="Download out Brochure"
-              severity="secondary"
               size="large"
               className="hidden lg:flex min-w-fit"
               rounded
             />
             <Button
               label="Download out Brochure"
-              severity="secondary"
               className="lg:hidden min-w-fit"
               rounded
             />
