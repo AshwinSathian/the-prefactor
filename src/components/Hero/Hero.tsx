@@ -36,7 +36,9 @@ const HeroSection: React.FC = () => {
             />
           </a>
         </div>
-        <h1 className="text-xl text-center">connect.theprofactor@gmail.com</h1>
+        <h1 className="text-xl text-center text-white">
+          connect.theprofactor@gmail.com
+        </h1>
       </div>
     </div>
   );

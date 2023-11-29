@@ -39,9 +39,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <h3 className="text-2xl text-center text-accent-color">
-        Let's stay connected
-      </h3>
+      <h3 className="text-2xl text-center text-white">Let's stay connected</h3>
       <div className="w-full flex items-center justify-center gap-3">
         {socials.map((s) => (
           <a key={s.id} href={s.link} target="_blank">
